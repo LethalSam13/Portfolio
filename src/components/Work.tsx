@@ -8,37 +8,37 @@ const projects = [
     title: "DigiLoCS — Physics-Informed Digital Twin",
     category: "Computational Pharmacology & Digital Twin Modeling",
     tools: "R, PBPK (PK-Sim), QSAR, Nelder-Mead Optimization, Sobol Sensitivity Analysis",
-    image: "/images/digilocs.png",
+    image: `${import.meta.env.BASE_URL}images/digilocs.png`,
   },
   {
     title: "Dynamic Mechanical Stimulation Platform for Vascular Tissue Models",
     category: "Organ-on-Chip Design & Vascular Mechanobiology",
     tools: "ABAQUS (FEA), PDMS Soft Lithography, CellASIC Pneumatic System, ROS Quantification",
-    image: "/images/vascular-chip.png",
+    image: `${import.meta.env.BASE_URL}images/vascular-chip.png`,
   },
   {
     title: "Physics-Preserved Fluid Dynamics (ASCC Framework)",
     category: "Physics-Informed Machine Learning & CFD",
     tools: "PyTorch, CUDA, SPH, HRNet Architecture, Voxel Resampling",
-    image: "/images/fluid-ascc.png",
+    image: `${import.meta.env.BASE_URL}images/fluid-ascc.png`,
   },
   {
     title: "Affordable Myoelectric Prosthetic Arm",
     category: "Biomedical Design & Additive Manufacturing",
     tools: "SolidWorks, 3D Printing (FDM), EMG Sensors, MATLAB",
-    image: "/images/Myoelectric.png",
+    image: `${import.meta.env.BASE_URL}images/Myoelectric.png`,
   },
   {
     title: "Assessment of Hyperelastic Constitutive Models",
     category: "Simulation & Structural Analysis",
     tools: "SolidWorks, ANSYS, MATLAB",
-    image: "/images/hyperelastic.png",
+    image: `${import.meta.env.BASE_URL}images/hyperelastic.png`,
   },
   {
     title: "Thermoacoustic Driven Pulse Tube Cryocooler",
     category: "Thermal Systems Design & Simulation",
     tools: "ANSYS, SolidWorks, CAD Modeling, Fabrication",
-    image: "/images/cryocooler.png",
+    image: `${import.meta.env.BASE_URL}images/cryocooler.png`,
   },
 ];
 
