@@ -179,7 +179,7 @@
   box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
 }
 
-/* ── Work Image (reused) ── */
+/* ── Work Image ── */
 .work-image {
   display: flex;
   width: 100%;
@@ -228,11 +228,14 @@
 
 .work-image img {
   max-width: 90%;
-  max-height: 200px;
+  max-height: 220px;
   border-radius: 8px;
+  display: block;
 }
 
 /* ── Responsive ── */
+
+/* Large monitors: arrows float outside the container */
 @media only screen and (max-width: 1600px) {
   .carousel-arrow-left {
     left: -60px;
@@ -243,33 +246,13 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+/* 15" laptop & similar (≤1400px): switch to column layout */
+@media only screen and (max-width: 1400px) {
   .work-section h2 {
-    font-size: 50px;
+    font-size: 52px;
+    margin-top: 70px;
   }
 
-  .carousel-details h4 {
-    font-size: 22px;
-  }
-
-  .carousel-number h3 {
-    font-size: 45px;
-  }
-
-  .carousel-content {
-    gap: 40px;
-  }
-
-  .carousel-arrow-left {
-    left: 10px;
-  }
-
-  .carousel-arrow-right {
-    right: 10px;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
   .carousel-content {
     flex-direction: column;
     gap: 30px;
@@ -296,16 +279,24 @@
   .carousel-arrow-right {
     right: 10px;
   }
+
+  /* More room for image in column layout */
+  .work-image img {
+    max-height: 360px;
+    max-width: 100%;
+  }
 }
 
+/* Tablet / large mobile */
 @media only screen and (max-width: 900px) {
   .work-section {
     padding: 50px 0;
   }
 
   .work-section h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 38px;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
 
   .carousel-number h3 {
@@ -316,15 +307,56 @@
     font-size: 20px;
   }
 
+  .carousel-category {
+    font-size: 14px;
+  }
+
+  .carousel-tools p {
+    font-size: 13px;
+  }
+
   .carousel-content {
     gap: 10px;
   }
 
   .carousel-slide {
-    padding: 30px 0;
+    padding: 25px 0;
   }
 
   .work-image img {
-    max-height: 200px;
+    max-height: 220px;
+    max-width: 100%;
+  }
+}
+
+/* Small phones (≤480px) */
+@media only screen and (max-width: 480px) {
+  .work-section h2 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .carousel-details h4 {
+    font-size: 17px;
+  }
+
+  .carousel-number h3 {
+    font-size: 28px;
+  }
+
+  .carousel-category {
+    font-size: 12px;
+  }
+
+  .carousel-tools .tools-label {
+    font-size: 12px;
+  }
+
+  .carousel-tools p {
+    font-size: 12px;
+  }
+
+  .work-image img {
+    max-height: 180px;
   }
 }

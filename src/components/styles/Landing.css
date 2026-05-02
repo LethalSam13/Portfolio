@@ -351,6 +351,29 @@ h2.landing-info-h2 {
     right: auto;
     left: 66%;
   }
+
+  /* Scale up from 768px values toward 1600px values on 15" laptops */
+  .landing-intro h2 {
+    font-size: 28px;
+  }
+
+  .landing-intro h1 {
+    font-size: 44px;
+    line-height: 40px;
+  }
+
+  .landing-info h3 {
+    font-size: 28px;
+  }
+
+  .landing-info h2 {
+    font-size: 50px;
+    line-height: 46px;
+  }
+
+  h2.landing-info-h2 {
+    font-size: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
